@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3468B952BCABC3B00611CFB /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3468B942BCABC3B00611CFB /* SplashView.swift */; };
+		F3468B9A2BCAC10A00611CFB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3468B992BCAC10A00611CFB /* HomeView.swift */; };
 		F39D3E1F2BCAB47F0038CBE9 /* FootballManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3E1E2BCAB47F0038CBE9 /* FootballManagerApp.swift */; };
 		F39D3E212BCAB47F0038CBE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3E202BCAB47F0038CBE9 /* ContentView.swift */; };
 		F39D3E232BCAB4810038CBE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3E222BCAB4810038CBE9 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3468B942BCABC3B00611CFB /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F3468B992BCAC10A00611CFB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F39D3E1B2BCAB47F0038CBE9 /* FootballManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D3E1E2BCAB47F0038CBE9 /* FootballManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballManagerApp.swift; sourceTree = "<group>"; };
 		F39D3E202BCAB47F0038CBE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3468B8F2BCABBFD00611CFB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F3468B972BCAC0E000611CFB /* Home */,
+				F3468B902BCABC0600611CFB /* SplashView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F3468B902BCABC0600611CFB /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				F3468B912BCABC1400611CFB /* View */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		F3468B912BCABC1400611CFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3468B942BCABC3B00611CFB /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3468B962BCABC6D00611CFB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F39D3E222BCAB4810038CBE9 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F3468B972BCAC0E000611CFB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3468B982BCAC0FD00611CFB /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F3468B982BCAC0FD00611CFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3468B992BCAC10A00611CFB /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F39D3E122BCAB47F0038CBE9 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +147,10 @@
 		F39D3E1D2BCAB47F0038CBE9 /* FootballManager */ = {
 			isa = PBXGroup;
 			children = (
+				F3468B8F2BCABBFD00611CFB /* Presentation */,
 				F39D3E1E2BCAB47F0038CBE9 /* FootballManagerApp.swift */,
 				F39D3E202BCAB47F0038CBE9 /* ContentView.swift */,
-				F39D3E222BCAB4810038CBE9 /* Assets.xcassets */,
+				F3468B962BCABC6D00611CFB /* Resource */,
 				F39D3E242BCAB4810038CBE9 /* Preview Content */,
 			);
 			path = FootballManager;
@@ -258,7 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F39D3E212BCAB47F0038CBE9 /* ContentView.swift in Sources */,
+				F3468B9A2BCAC10A00611CFB /* HomeView.swift in Sources */,
 				F39D3E1F2BCAB47F0038CBE9 /* FootballManagerApp.swift in Sources */,
+				F3468B952BCABC3B00611CFB /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
