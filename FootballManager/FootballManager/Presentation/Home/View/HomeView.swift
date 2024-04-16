@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var isPresentedAddMatchView: Bool = false
     var body: some View {
         VStack {
             MatchList()
+            HStack {
+                Spacer()
+                AddMatchButton(isPresentedAddMatchView: $isPresentedAddMatchView)
+            }
+        }
+        .navigationDestination(isPresented: $isPresentedAddMatchView) {
+            EditView(isPresentedView: $isPresentedAddMatchView)
         }
     }
 }

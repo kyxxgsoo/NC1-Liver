@@ -11,7 +11,8 @@ import WebKit
 struct MatchDetailWebView: UIViewRepresentable {
 //    @State var urlToLoad: String
     var scheme: String = "https"
-    var host: String = "youtu.be"
+    var host: String = "youtube.com"
+    var apiPath: String = "/watch"
     var moviePath: String
     @Binding var highlightTime: String
     
@@ -35,8 +36,9 @@ struct MatchDetailWebView: UIViewRepresentable {
     
     func makeURL() -> String {
         var secondTime = viewModel.convertTimeToSecond(time: highlightTime)
-        print("\(scheme)://\(host)\(moviePath)?t=\(secondTime)")
-        return "\(scheme)://\(host)\(moviePath)?t=\(secondTime)"
+        // 둘다 가능, ex) 12h12m12s형식도 가능하고 t=422형식도 가능
+        print("\(scheme)://\(host)\(apiPath)?v=\(moviePath)#t=\(secondTime)")
+        return "\(scheme)://\(host)\(apiPath)\(moviePath)?t=\(secondTime)"
     }
     
     
@@ -54,6 +56,6 @@ struct MatchDetailWebView: UIViewRepresentable {
     
 }
 
-#Preview {
-    MatchDetailWebView(/*urlToLoad: <#T##String#>, scheme: "https", */moviePath: "/F67ICWlQs_0", highlightTime: .constant("278"))
-}
+//#Preview {
+//    MatchDetailWebView(/*urlToLoad: <#T##String#>, scheme: "https", */moviePath: "/F67ICWlQs_0", highlightTime: .constant("278"))
+//}

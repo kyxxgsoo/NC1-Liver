@@ -28,4 +28,6 @@ class MatchDetailWebViewModel: ObservableObject {
         
         return String(totalSecond)
     }
+    
+
 }
