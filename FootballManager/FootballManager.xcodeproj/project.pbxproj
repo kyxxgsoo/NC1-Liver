@@ -54,6 +54,7 @@
 		F350B3792BCE08E300C0BA65 /* MatchDetailContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailContents.swift; sourceTree = "<group>"; };
 		F350B37C2BCE0FDB00C0BA65 /* MatchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewModel.swift; sourceTree = "<group>"; };
 		F350B37E2BCE12A700C0BA65 /* MatchDetailWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailWebView.swift; sourceTree = "<group>"; };
+		F350B3822BCE224C00C0BA65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F39D3E1B2BCAB47F0038CBE9 /* FootballManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D3E1E2BCAB47F0038CBE9 /* FootballManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballManagerApp.swift; sourceTree = "<group>"; };
 		F39D3E202BCAB47F0038CBE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +196,7 @@
 		F39D3E1D2BCAB47F0038CBE9 /* FootballManager */ = {
 			isa = PBXGroup;
 			children = (
+				F350B3822BCE224C00C0BA65 /* Info.plist */,
 				F3468B8F2BCABBFD00611CFB /* Presentation */,
 				F39D3E1E2BCAB47F0038CBE9 /* FootballManagerApp.swift */,
 				F39D3E202BCAB47F0038CBE9 /* ContentView.swift */,
@@ -537,6 +539,7 @@
 				DEVELOPMENT_TEAM = U5F437QJA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -566,6 +569,7 @@
 				DEVELOPMENT_TEAM = U5F437QJA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

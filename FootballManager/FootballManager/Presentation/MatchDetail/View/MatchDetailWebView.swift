@@ -10,17 +10,20 @@ import WebKit
 
 struct MatchDetailWebView: UIViewRepresentable {
 //    @State var urlToLoad: String
-    var scheme: String
+    var scheme: String = "https"
     var host: String = "youtu.be"
     var moviePath: String
-    var highlightTime: String
+    @Binding var highlightTime: String
+    
+    
+    @ObservedObject var viewModel = MatchDetailWebViewModel()
     
     //ui view 만들기
     func makeUIView(context: Context) -> WKWebView {
         
         //unwrapping
         guard let url = URL(string: makeURL()) else {
-            return WKWebView()
+            return WKWebView(frame: .zero)
         }
         //웹뷰 인스턴스 생성
         let webView = WKWebView()
@@ -31,26 +34,26 @@ struct MatchDetailWebView: UIViewRepresentable {
     }
     
     func makeURL() -> String {
-        print("\(scheme)://\(host)\(moviePath)?t=\(highlightTime)")
-        return "\(scheme)://\(host)\(moviePath)?t=\(highlightTime)"
+        var secondTime = viewModel.convertTimeToSecond(time: highlightTime)
+        print("\(scheme)://\(host)\(moviePath)?t=\(secondTime)")
+        return "\(scheme)://\(host)\(moviePath)?t=\(secondTime)"
     }
     
     
     //업데이트 ui view
     func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<MatchDetailWebView>) {
-        
+        updateURLAndLoad(uiView)
     }
     
-//    var body: some View {
-//        Image("DefaultImage")
-//            .resizable()
-//            .scaledToFit()
-//            .frame(width: 300)
-//            .background(Color.gray)
-//            .clipShape(RoundedRectangle.init(cornerRadius: 10))
-//    }
+    private func updateURLAndLoad(_ webView: WKWebView) {
+        if let url = URL(string: makeURL()) {
+            let request = URLRequest(url: url)
+            webView.load(request)
+        }
+    }
+    
 }
 
 #Preview {
-    MatchDetailWebView(/*urlToLoad: <#T##String#>, */scheme: "https", moviePath: "/F67ICWlQs_0", highlightTime: "278")
+    MatchDetailWebView(/*urlToLoad: <#T##String#>, scheme: "https", */moviePath: "/F67ICWlQs_0", highlightTime: .constant("278"))
 }

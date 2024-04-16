@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MatchDetailContents: View {
     var data: MockupDetailData
+    @Binding var selectedHighlightTime: String
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -26,12 +27,13 @@ struct MatchDetailContents: View {
             Text("하이라이트")
                 .font(.title)
             
-            ForEach(data.highLights, id: \.self) { highlight in
+            ForEach(data.highlightTimes, id: \.self) { highlightTime in
                 HStack(spacing: 0) {
-                    Text(highlight)
+                    Text(highlightTime)
                     Spacer()
                     Button {
-                        
+                        selectedHighlightTime = highlightTime
+                        print(selectedHighlightTime)
                     } label: {
                         Image(systemName: "play.circle")
                             .resizable()
@@ -52,5 +54,5 @@ struct MatchDetailContents: View {
 }
 
 #Preview {
-    MatchDetailContents(data: MockupDetailData.init())
+    MatchDetailContents(data: MockupDetailData.init(), selectedHighlightTime: .constant("00:00:00"))
 }

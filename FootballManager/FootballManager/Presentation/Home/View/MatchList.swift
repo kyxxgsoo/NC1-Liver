@@ -19,7 +19,8 @@ struct MockupDetailData: Identifiable {
     var imageName: String = "DefaultImage"
     var title: String = "title"
     var date: String = "2024.04.11"
-    var highLights: [String] = ["08:11:34", "11:31:35", "12:05:10"]
+    var highlightTimes: [String] = ["00:04:34", "00:08:45", "00:09:18"]
+    var moviePath: String = "F67ICWlQs_0"
 }
 
 struct MatchList: View {
