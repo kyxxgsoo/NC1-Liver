@@ -11,7 +11,7 @@ struct MatchListCell: View {
 //    var imageName: String = "DefaultImage"
 //    var title: String = "title"
 //    var date: String = "2024.04.11"
-    var data: MockupData
+    var data: MockupCellData
     var body: some View {
         HStack {
             ThumbnailImage(imageName: data.imageName)
@@ -25,5 +25,5 @@ struct MatchListCell: View {
 }
 
 #Preview {
-    MatchListCell(data: MockupData())
+    MatchListCell(data: MockupCellData())
 }
