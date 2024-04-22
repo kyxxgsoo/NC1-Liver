@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State var isPresentedAddMatchView: Bool = false
+    @State var isPresentedEditMatchView: Bool = false
     var body: some View {
         VStack {
             MatchList()
@@ -18,7 +19,10 @@ struct HomeView: View {
             }
         }
         .navigationDestination(isPresented: $isPresentedAddMatchView) {
-            EditView(isPresentedView: $isPresentedAddMatchView)
+            MatchAddView(isPresentedView: $isPresentedAddMatchView)
+        }
+        .navigationDestination(isPresented: $isPresentedEditMatchView) {
+            
         }
     }
 }

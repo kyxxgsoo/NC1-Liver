@@ -19,9 +19,13 @@
 		F350B37F2BCE12A700C0BA65 /* MatchDetailWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B37E2BCE12A700C0BA65 /* MatchDetailWebView.swift */; };
 		F350B3802BCE130800C0BA65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3E222BCAB4810038CBE9 /* Assets.xcassets */; };
 		F350B3812BCE130B00C0BA65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3E252BCAB4810038CBE9 /* Preview Assets.xcassets */; };
-		F350B3862BCE279C00C0BA65 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B3852BCE279C00C0BA65 /* EditView.swift */; };
-		F350B3882BCE289400C0BA65 /* MatchEditContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B3872BCE289400C0BA65 /* MatchEditContents.swift */; };
+		F350B3862BCE279C00C0BA65 /* MatchAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B3852BCE279C00C0BA65 /* MatchAddView.swift */; };
+		F350B3882BCE289400C0BA65 /* MatchAddContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B3872BCE289400C0BA65 /* MatchAddContents.swift */; };
 		F350B3C12BCE4C5700C0BA65 /* AddMatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B3C02BCE4C5700C0BA65 /* AddMatchButton.swift */; };
+		F350B3C42BCE5F0A00C0BA65 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B3C32BCE5F0A00C0BA65 /* HomeViewModel.swift */; };
+		F350B3C82BCE5FCA00C0BA65 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B3C72BCE5FCA00C0BA65 /* Match.swift */; };
+		F350B3CB2BCF5C0400C0BA65 /* MatchAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B3CA2BCF5C0400C0BA65 /* MatchAddViewModel.swift */; };
+		F350B3CE2BCF769200C0BA65 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350B3CD2BCF769200C0BA65 /* Extension+String.swift */; };
 		F39D3E1F2BCAB47F0038CBE9 /* FootballManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3E1E2BCAB47F0038CBE9 /* FootballManagerApp.swift */; };
 		F39D3E212BCAB47F0038CBE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3E202BCAB47F0038CBE9 /* ContentView.swift */; };
 		F39D3E302BCAB4810038CBE9 /* FootballManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3E2F2BCAB4810038CBE9 /* FootballManagerTests.swift */; };
@@ -58,9 +62,13 @@
 		F350B37C2BCE0FDB00C0BA65 /* MatchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewModel.swift; sourceTree = "<group>"; };
 		F350B37E2BCE12A700C0BA65 /* MatchDetailWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailWebView.swift; sourceTree = "<group>"; };
 		F350B3822BCE224C00C0BA65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		F350B3852BCE279C00C0BA65 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
-		F350B3872BCE289400C0BA65 /* MatchEditContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchEditContents.swift; sourceTree = "<group>"; };
+		F350B3852BCE279C00C0BA65 /* MatchAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchAddView.swift; sourceTree = "<group>"; };
+		F350B3872BCE289400C0BA65 /* MatchAddContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchAddContents.swift; sourceTree = "<group>"; };
 		F350B3C02BCE4C5700C0BA65 /* AddMatchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMatchButton.swift; sourceTree = "<group>"; };
+		F350B3C32BCE5F0A00C0BA65 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F350B3C72BCE5FCA00C0BA65 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		F350B3CA2BCF5C0400C0BA65 /* MatchAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchAddViewModel.swift; sourceTree = "<group>"; };
+		F350B3CD2BCF769200C0BA65 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		F39D3E1B2BCAB47F0038CBE9 /* FootballManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D3E1E2BCAB47F0038CBE9 /* FootballManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballManagerApp.swift; sourceTree = "<group>"; };
 		F39D3E202BCAB47F0038CBE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,7 +109,7 @@
 		F3468B8F2BCABBFD00611CFB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F350B3832BCE269000C0BA65 /* EditView */,
+				F350B3832BCE269000C0BA65 /* MatchAddView */,
 				F350B3702BCCC0F600C0BA65 /* MatchDetail */,
 				F3468B972BCAC0E000611CFB /* Home */,
 				F3468B902BCABC0600611CFB /* SplashView */,
@@ -136,6 +144,7 @@
 		F3468B972BCAC0E000611CFB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F350B3C22BCE5EFE00C0BA65 /* ViewModel */,
 				F350B3BF2BCE4C3A00C0BA65 /* Helper */,
 				F3468B982BCAC0FD00611CFB /* View */,
 			);
@@ -181,19 +190,20 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		F350B3832BCE269000C0BA65 /* EditView */ = {
+		F350B3832BCE269000C0BA65 /* MatchAddView */ = {
 			isa = PBXGroup;
 			children = (
+				F350B3C92BCF5BE700C0BA65 /* ViewModel */,
 				F350B3842BCE269E00C0BA65 /* View */,
 			);
-			path = EditView;
+			path = MatchAddView;
 			sourceTree = "<group>";
 		};
 		F350B3842BCE269E00C0BA65 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F350B3852BCE279C00C0BA65 /* EditView.swift */,
-				F350B3872BCE289400C0BA65 /* MatchEditContents.swift */,
+				F350B3852BCE279C00C0BA65 /* MatchAddView.swift */,
+				F350B3872BCE289400C0BA65 /* MatchAddContents.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +214,46 @@
 				F350B3C02BCE4C5700C0BA65 /* AddMatchButton.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		F350B3C22BCE5EFE00C0BA65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F350B3C32BCE5F0A00C0BA65 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F350B3C52BCE5F8100C0BA65 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F350B3C62BCE5F8D00C0BA65 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F350B3C62BCE5F8D00C0BA65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F350B3C72BCE5FCA00C0BA65 /* Match.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F350B3C92BCF5BE700C0BA65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F350B3CA2BCF5C0400C0BA65 /* MatchAddViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F350B3CC2BCF768000C0BA65 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F350B3CD2BCF769200C0BA65 /* Extension+String.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		F39D3E122BCAB47F0038CBE9 = {
@@ -229,6 +279,8 @@
 		F39D3E1D2BCAB47F0038CBE9 /* FootballManager */ = {
 			isa = PBXGroup;
 			children = (
+				F350B3CC2BCF768000C0BA65 /* Extension */,
+				F350B3C52BCE5F8100C0BA65 /* Domain */,
 				F350B3822BCE224C00C0BA65 /* Info.plist */,
 				F3468B8F2BCABBFD00611CFB /* Presentation */,
 				F39D3E1E2BCAB47F0038CBE9 /* FootballManagerApp.swift */,
@@ -397,15 +449,19 @@
 				F39D3E212BCAB47F0038CBE9 /* ContentView.swift in Sources */,
 				F3468B9A2BCAC10A00611CFB /* HomeView.swift in Sources */,
 				F39D3E1F2BCAB47F0038CBE9 /* FootballManagerApp.swift in Sources */,
+				F350B3C42BCE5F0A00C0BA65 /* HomeViewModel.swift in Sources */,
 				F350B3742BCCC52E00C0BA65 /* MatchDetailView.swift in Sources */,
+				F350B3CE2BCF769200C0BA65 /* Extension+String.swift in Sources */,
 				F350B37F2BCE12A700C0BA65 /* MatchDetailWebView.swift in Sources */,
 				F3468BA02BCACA1500611CFB /* MatchList.swift in Sources */,
 				F3468B952BCABC3B00611CFB /* SplashView.swift in Sources */,
-				F350B3882BCE289400C0BA65 /* MatchEditContents.swift in Sources */,
-				F350B3862BCE279C00C0BA65 /* EditView.swift in Sources */,
+				F350B3C82BCE5FCA00C0BA65 /* Match.swift in Sources */,
+				F350B3882BCE289400C0BA65 /* MatchAddContents.swift in Sources */,
+				F350B3862BCE279C00C0BA65 /* MatchAddView.swift in Sources */,
 				F350B37D2BCE0FDB00C0BA65 /* MatchDetailViewModel.swift in Sources */,
 				F350B37A2BCE08E300C0BA65 /* MatchDetailContents.swift in Sources */,
 				F3468B9C2BCAC39C00611CFB /* ThumbnailImage.swift in Sources */,
+				F350B3CB2BCF5C0400C0BA65 /* MatchAddViewModel.swift in Sources */,
 				F350B3C12BCE4C5700C0BA65 /* AddMatchButton.swift in Sources */,
 				F350B3762BCE083000C0BA65 /* MatchDetailHeader.swift in Sources */,
 				F3468B9E2BCAC79D00611CFB /* MatchListCell.swift in Sources */,

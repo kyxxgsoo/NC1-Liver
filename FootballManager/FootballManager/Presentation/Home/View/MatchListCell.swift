@@ -15,6 +15,7 @@ struct MatchListCell: View {
     var body: some View {
         HStack {
             ThumbnailImage(imageName: data.imageName)
+                .clipShape(RoundedRectangle(cornerSize: /*@START_MENU_TOKEN@*/CGSize(width: 20, height: 10)/*@END_MENU_TOKEN@*/))
             Spacer()
             Text(data.title)
             Spacer()

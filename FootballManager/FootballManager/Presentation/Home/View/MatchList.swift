@@ -9,15 +9,15 @@ import SwiftUI
 
 struct MockupCellData: Identifiable {
     var id: UUID = UUID()
-    var imageName: String = "DefaultImage"
-    var title: String = "title"
+    var imageName: String = "FootballTeam"
+    var title: String = "포스켐 vs 멘삭"
     var date: String = "2024.04.11"
 }
 
 struct MockupDetailData: Identifiable {
     var id: UUID = UUID()
-    var imageName: String = "DefaultImage"
-    var title: String = "title"
+    var imageName: String = "FootballTeam"
+    var title: String = "포스켐 vs 멘삭"
     var date: String = "2024.04.11"
     var highlightTimes: [String] = ["00:04:34", "00:08:45", "00:09:18"]
     var moviePath: String = "F67ICWlQs_0"
